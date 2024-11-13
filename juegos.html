@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background-color: #f8f8f8;
+        }
+
+        header a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+/* Alineación a la derecha solo para la imagen y el texto en la parte superior */
+.right-align-content {
+    text-align: right; /* Alineación del texto a la derecha */
+}
+
+.main-image {
+    width: 300px; /* Tamaño reducido de la imagen */
+    height: auto;
+    margin-left: 20px; /* Espacio entre la imagen y el texto */
+    margin-bottom: 10px; /* Espacio debajo de la imagen */
+    display: inline-block; /* Hace que la imagen no fluya alrededor del texto */
+}
+
+.section-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    text-align: right; /* Alineación del texto a la derecha */
+    clear: both; /* Esto asegura que el texto se coloque debajo de la imagen */
+    margin-top: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+        .section-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .orange-section {
+            background-color: #42FFF7;
+            color: black;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .orange-section .icon {
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+
+        /* Estilo para centrar la segunda imagen */
+        .centered-image {
+            display: block;
+            margin: 0 auto; /* Centrado automático */
+            width: 80%; /* Ocupa el 80% del ancho de la pantalla */
+            height: auto;
+        }
+
+        .image-caption-centered {
+            text-align: center;
+            font-size: 12px;
+            color: gray;
+            margin-top: 5px;
+        }
+
+        .explore {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .explore div {
+            width: 30%;
+        }
+
+        .explore img {
+            width: 100%;
+            height: auto;
+        }
+
+        .explore p {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        footer {
+            background-color: #f8f8f8;
+            padding: 20px;
+            color: gray;
+            display: flex;
+            justify-content: space-around;
+            font-size: 14px;
+        }
+
+        .footer-section {
+            width: 20%;
+        }
+
+        .footer-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .footer-section li {
+            margin-bottom: 5px;
+        }
+
+        .footer-logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .footer-logo img {
+            width: 100px;
+            height: auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="compania.html">Compañia</a>
+    <a href="juegos.html">Juegos</a>
+    <a href="desarrollo.html">Desarrollo</a>
+    <a href="duenos.html">Dueños</a>
+</header>
+
+<div class="content">
+    <!-- Sección con imagen y texto alineados a la derecha -->
+    <div class="right-align-content">
+        <!-- Primera imagen alineada a la derecha -->
+        <img src="https://assetsio.gnwcdn.com/lista-com-todos-os-jogos-do-playstation-now-1420475309440.jpg?width=1200&height=1200&fit=bounds&quality=70&format=jpg&auto=webp" alt="img principal" class="main-image">
+        
+        <!-- Título de la sección y contenido alineados a la derecha -->
+        <div class="section-content">
+            <p>
+                Los juegos de PlayStation son videojuegos desarrollados específicamente para las consolas de la marca PlayStation, una línea de plataformas de videojuegos de Sony. Estas consolas incluyen modelos como la PlayStation 4 (PS4), PlayStation 5 (PS5) y PlayStation Vita, además de ofrecer juegos a través de sus servicios en línea como PlayStation Plus y PlayStation Now.
+            </p>
+        </div>
+    </div>
+
+    <!-- Segunda imagen centrada -->
+    <div class="section-title">Juegos PlayStation Now</div>
+    <img src="https://i.blogs.es/681063/650_1000_psnow/1366_2000.jpg" alt="img period" class="centered-image">
+    <p class="image-caption-centered"></p>
+</div>
+
+<div class="orange-section">
+    <div class="icon">▶</div>
+    El Catalogo
+
+</div>
+
+<div class="divider">
+    <hr>
+    <h2>Explore Further</h2>
+</div>
+
+<div class="explore">
+    <div>
+        <img src="https://e7.pngegg.com/pngimages/1001/487/png-clipart-logo-web-development-digital-marketing-brand-design-blue-web-design.png">
+        <p>Desarrollo</p>
+    </div>
+    <div>
+        <img src="https://cdn-icons-png.flaticon.com/512/1654/1654322.png" alt="Dueños">
+        <p>Dueños</p>
+    </div>
+    <div>
+        <img src="https://i.etsystatic.com/36092519/r/il/7300a5/4133385321/il_570xN.4133385321_lf2l.jpg" alt="Compañia">
+        <p>Compañia</p>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/PlayStation_logo.svg/2560px-PlayStation_logo.png" alt="My Company Logo">
+        <p>My Company</p>
+        <small>My slogan</small>
+    </div>
+    
+    <div class="footer-links">
+        <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+                <li>People</li>
+                <li>Diversity</li>
+                <li>History</li>
+                <li>Awards and Recognition</li>
+                <li>Social Responsibility</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Journalism</h4>
+            <ul>
+                <li>Newsroom</li>
+                <li>Experience</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Careers</h4>
+            <ul>
+                <li>Newsroom</li>
+                <li>Technology</li>
+                <li>Product and Design</li>
+                <li>Marketing</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <ul>
+                <li>Investors</li>
+                <li>Collaborate</li>
+                <li>Contact</li>
+                <li>Press</li>
+                <li>Calendar</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+                <li>California Notice</li>
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
